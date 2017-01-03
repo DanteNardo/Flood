@@ -1,5 +1,5 @@
 // Author: Dante Nardo
-// Last Modified: 1/1/2017
+// Last Modified: 1/2/2017
 // Purpose: Implements the key functions that the game uses to run
 
 #include "stdafx.h"
@@ -90,16 +90,16 @@ void Engine::draw()
 void Engine::run()
 {
 	Clock clock;
+	Time dt;
 
 	while (m_window.isOpen()) {
 		// Get the change in time since the last frame
-		Time dt = clock.restart();
+		dt = clock.restart();
 		m_gameTime += dt;
-		float dtAsSeconds = dt.asSeconds();
 
 		// Call the three game running functions
 		input();
-		update(dtAsSeconds);
+		update(dt.asSeconds());
 		draw();
 	}
 }

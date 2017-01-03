@@ -12,11 +12,11 @@
 class TextureHolder
 {
 private:
+	// A static singleton that can be accessed via the class name
+	static TextureHolder* m_singleton;
+
 	// A map that contains all of the game textures
 	std::map<std::string, sf::Texture> m_textures;
-
-	// A static singleton that can be accessed via the class name
-	static TextureHolder* m_s_instance;
 
 public:
 	TextureHolder();

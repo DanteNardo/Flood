@@ -6,12 +6,12 @@
 #include "TextureHolder.h"
 #include <assert.h>
 
-TextureHolder* TextureHolder::m_s_instance = nullptr;
+TextureHolder* TextureHolder::m_singleton = nullptr;
 
 TextureHolder::TextureHolder()
 {
-	assert(m_s_instance == nullptr);
-	m_s_instance = this;
+	assert(m_singleton == nullptr);
+	m_singleton = this;
 }
 
 TextureHolder::~TextureHolder()
@@ -20,7 +20,7 @@ TextureHolder::~TextureHolder()
 
 sf::Texture& TextureHolder::GetTexture(std::string const& filename)
 {
-	auto& m = m_s_instance->m_textures;
+	auto& m = m_singleton->m_textures;
 	auto kvp = m.find(filename);
 
 	// Return the texture if we did not reach the end of the map

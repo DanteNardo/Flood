@@ -1,2 +1,3 @@
-# Flood
-A video game about computer memory, artificial intelligence, and the meaning of life.
+# Null
+A video game about algorithms and their sins.
+Programmed using C++ and SFML.

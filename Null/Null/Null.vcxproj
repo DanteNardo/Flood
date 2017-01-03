@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{71918fd6-83fc-4b99-96df-50d9fbface36}</ProjectGuid>
+    <ProjectGuid>{6ed4dd95-f8a7-4e28-9e27-d687de3abbec}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Flood</RootNamespace>
+    <RootNamespace>Null</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -157,7 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="Flood.cpp" />
+    <ClCompile Include="Null.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

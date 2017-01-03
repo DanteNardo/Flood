@@ -1,6 +1,6 @@
 // Author: Dante Nardo
-// Last Modified: 12/31/2016
-// Purpose: Runs the Flood game
+// Last Modified: 1/2/2017
+// Purpose: Runs the game Null
 
 // Include important libraries and files
 #include "stdafx.h"
